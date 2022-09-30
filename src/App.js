@@ -6,11 +6,13 @@ import Offer from './components/Offer';
 import Ourteam from './components/Ourteam';
 import Accordion from './components/Accordion';
 
+import Particle from './components/Particle'
 
 
 function App() {
   return (
     <div className="App">
+      <Particle/>
       <Nav/>
       <Header/>
       <Events/>
