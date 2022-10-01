@@ -33,15 +33,35 @@ input{
 
 
 
+
+.particlebg{
+    animation: fadeIn 8s;
+
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
+
 #main{
     width:100%;
     height:768px;
+
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./images/bg.png');
+    background-image: url('./images/bgrt3.png');
+    background-position-x: center;
     position: relative;
     z-index: 0;
+    animation: fadeIn 4s;
 }
+
+
+
 #main::before{
     position: absolute;
     content: "";
@@ -55,6 +75,13 @@ input{
     height: 100%;
     z-index: -1;
 }
+
+/* videobg */
+
+
+
+
+
 nav{
 	display: flex;
 	justify-content: space-around;
@@ -130,6 +157,7 @@ nav .menu-btn,
     color: #f3323b;
     text-shadow: 0px 0px 10px #080807;
     transition: all 0.25s ease-out;
+
 }
 .name .details{
     font-size: 23px;
@@ -151,10 +179,13 @@ nav .menu-btn,
     color:#ffffff;
 }
 
+#of{
+    font-size: 1.9rem;
+}
+
 #zen{
     padding-top: 25px;
 }
-
 
 
 
@@ -273,7 +304,7 @@ nav .menu-btn,
 }
 
 .a-box:hover {
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
 
   .a-box:hover .details {
@@ -300,8 +331,8 @@ nav .menu-btn,
 }
 
 .a-box:hover .a-b-text{
-    
-    transform: translateY(-70px) ;
+    transform: translateY(-170px) ;
+    transition: 0.4s ease-in-out;
   }
   
 .a-b-text:hover:before {
@@ -310,8 +341,18 @@ nav .menu-btn,
 
 .details{
     font-family: 'Lato';
-
 }
+
+.a-b-button{
+    position: relative;
+}
+
+.a-box:hover .a-b-button{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-180px) ;
+    transition: 0.4s ease-in-out;
+  }
 
 
 
@@ -322,6 +363,7 @@ nav .menu-btn,
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    padding: 300px;
 }
 
 .pro-container{
@@ -391,6 +433,8 @@ nav .menu-btn,
 
 .p-box:hover .p-b-text{
     transform: translateY(-20px);
+    animation: fadeIn 4s;
+
     
   }
   
@@ -718,17 +762,21 @@ nav .menu-btn,
             }
         }
 
-
-        @media screen and (max-width:600px){
+@media screen and (max-width:600px){
 
             .p-b-img {
                 display: flex;
-                justify-content: space-be;
+                justify-content: space-between;
                 width:90%;
                 height: 90%;
                 /* border-radius: 5px; */
                 margin-right: 3px;
                 
+            }
+
+            .profilels{
+                padding: 0px;
+
             }
 
 
@@ -744,10 +792,14 @@ nav .menu-btn,
         
             .pro-img .p-box .p-b-img img{
                 padding: 10px;
-                margin-left: 17px;
+                margin-left: 15px;
                 width:70%;
                 height: 70%;
                 border-radius: 30px;
+            }
+
+            .pro-img .p-box .p-b-text{
+                margin-top: 10px;
             }
 
             .pro-img-4 .p-box .p-b-img img{
@@ -765,7 +817,7 @@ nav .menu-btn,
 
             .pro-img-3 .p-box .p-b-img img{
                 width:80%;
-                height: 63%;
+                height: 65%;
                 margin-left: 10px;
                 padding: 10px;
                 border-radius: 20px;
@@ -774,10 +826,11 @@ nav .menu-btn,
             .p-b-text{
                 margin-left: 10px;
                 font-size: .3rem;
+                padding: 10px;
             }
         
             .p-details{
-                margin-bottom: 5px;
+                margin-bottom: 2px;
             }
 
             .pro-img-4{
@@ -864,7 +917,7 @@ nav .menu-btn,
             }
             
             #main{
-                background-image: url('./images/bg11.png');
+                background-image: url('./images/bgr.png');
                 background-repeat:no-repeat;
                 -webkit-background-size:cover;
                 -moz-background-size:cover;
@@ -906,7 +959,8 @@ nav .menu-btn,
         }
 
         .a-box:hover .a-b-text{
-            transform: translateY(-80px);
+            transform: translateY(-170px);
+            transition: 0.5s ease-in-out;
             position: relative;
             
         }

@@ -1,4 +1,6 @@
 import React from 'react'
+import Card from './Card'
+
 
 function Eventbox(props) {
   return (
@@ -9,6 +11,9 @@ function Eventbox(props) {
         <div className='a-b-text'>
             <h2>{props.title}</h2>
             <p className='details'>{props.text}</p>
+        </div>
+        <div className='a-b-button'>
+          <Card r1 = {props.r1} r2 = {props.r2} r3 = {props.r3} r4 = {props.r4} r5 = {props.r5} />
         </div>
     </div>
   )

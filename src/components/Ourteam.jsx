@@ -5,10 +5,9 @@ import principal from '../images/persons/principal.jpg'
 import hod from '../images/persons/hod.jpg'
 
 
-
 function Ourteam() {
   return (
-    <div className='profilels'>
+    <div id="ourteam" className='profilels'>
         <h1>OUR TEAM</h1>
         <div className='pro-container'>
             <div className='pro-head'>

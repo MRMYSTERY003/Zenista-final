@@ -5,7 +5,7 @@ function Header() {
     <div id = 'main'>
         <div className='name'>
             <h1>DEPARTMENT</h1>
-            <span>OF</span>
+            <span id = 'of'>OF</span> 
             <h1>ECE</h1>
             <h2><span>PRESENTS</span></h2>
             <h1 id = 'zen'>ZENISTA</h1>

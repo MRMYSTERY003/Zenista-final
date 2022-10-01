@@ -5,20 +5,21 @@ import Events from './components/Events';
 import Offer from './components/Offer';
 import Ourteam from './components/Ourteam';
 import Accordion from './components/Accordion';
-
-import Particle from './components/Particle'
+import Particle2 from './components/Particle';
 
 
 function App() {
   return (
-    <div className="App">
-      <Particle/>
+    <div className="App"> 
+      <Particle2/>
       <Nav/>
       <Header/>
       <Events/>
       <Offer/>
       <Ourteam/>
+      {/* <Popup/> */}
       <Accordion/>
+
     </div>
   );
 }
