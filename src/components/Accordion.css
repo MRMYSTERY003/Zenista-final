@@ -66,3 +66,21 @@
     pointer-events: none;
     line-height: 1.3;
 }
+
+@media screen and (max-width:600px){
+    .accordion {
+        max-width: 250px;
+        margin: 10px auto 0;
+        border-radius: 3px;
+        background: #0f0f0f;
+    }
+    
+}
+
+.faq{
+    width: 900px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+
